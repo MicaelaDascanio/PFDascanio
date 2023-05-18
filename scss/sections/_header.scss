@@ -1,0 +1,66 @@
+header {
+
+    img {
+        width: 35%;
+        margin-left: 0px;
+        padding-bottom: 3px;
+
+    }
+
+
+
+}
+
+.bg-body-tertiary {
+    background-color: $lila !important;
+    // height: 8vh;
+}
+
+.nav-link.active,
+.nav-link {
+    font-family: "Oswald";
+    font-size: 17px;
+    padding: 2vh;
+    color: black;
+
+    &:hover {
+        color: grey;
+        font-weight: bold;
+        text-align: center;
+    }
+}
+
+
+nav {
+    ul {
+        li {
+            display: inline;
+            margin: 2vh;
+        }
+    }
+}
+
+@media (min-width: 992px) {
+    .navbar-expand-lg .navbar-collapse {
+        display: flex !important;
+        flex-basis: auto;
+        justify-content: flex-end;
+    }
+
+    .navbar-expand-lg .navbar-nav .nav-link {
+        padding-right: var(--bs-navbar-nav-link-padding-x);
+        padding-left: var(--bs-navbar-nav-link-padding-x);
+        padding: 3vh;
+    }
+
+
+    .bg-body-tertiary {
+        height: 8vh;
+    }
+
+    header {
+        img {
+            width: 30%;
+        }
+    }
+}

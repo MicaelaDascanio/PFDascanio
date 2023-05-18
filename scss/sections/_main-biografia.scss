@@ -1,0 +1,139 @@
+.main__biografia {
+    display: inline;
+}
+
+.card-img-top {
+    width: 100%;
+}
+
+.list-group-item {
+    img {
+        width: 15%;
+    }
+}
+
+.card {
+    grid-area: card;
+
+    h2 {
+        color: white;
+        padding: 5px;
+        background-color: $violeta;
+        margin: 5px;
+        text-align: center;
+    }
+
+    h5 {
+        font-size: 18px;
+    }
+
+    li {
+        font-size: 15px;
+    }
+
+    padding-bottom: 3px;
+}
+
+
+
+
+
+.biografia {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas: "historia historia historia card";
+    align-items: center;
+    justify-items: center;
+    justify-content: space-around;
+    align-content: center;
+}
+
+.resto {
+    padding-left: 70px;
+    padding-right: 70px;
+    text-align: justify;
+}
+
+.biografia__historia {
+    grid-area: historia;
+    padding-left: 70px;
+
+    p {
+        text-align: justify;
+        overflow: break-word;
+
+    }
+}
+
+.biografia__resto {
+    padding-left: 70px;
+    padding-right: 70px;
+    text-align: justify;
+}
+
+.cursiva {
+    font-style: italic;
+}
+
+.btn.btn-primary {
+    align-items: center;
+    background-color: #191414;
+    border: none;
+}
+
+@media (min-width: 1478px) {
+    .card-img-top {
+        width: 40%;
+        display: block;
+        margin: auto;
+    }
+
+    .card {
+        h2 {
+            color: white;
+            padding: 0px;
+            text-align: center;
+        }
+
+        h5 {
+            font-size: 16px;
+        }
+
+        .card h5 {
+            font-size: 16px;
+        }
+    }
+}
+
+@media (max-width: 768px),
+(max-width:1023px) {
+    h1 {
+        margin: 0;
+        padding: 5%;
+        padding-bottom: 2%;
+        font-size: 55px;
+    }
+
+    .biografia__resto,
+    .biografia__historia {
+        margin: 3%;
+        padding: 3%;
+    }
+
+    .biografia {
+        display: block;
+    }
+
+    .card {
+        margin: auto;
+
+        li {
+            font-size: 18px;
+        }
+    }
+
+    ul,
+    ol {
+        padding-left: 0rem;
+    }
+}

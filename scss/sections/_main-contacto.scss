@@ -1,0 +1,66 @@
+.formulario {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    gap: 4%;
+
+    img {
+        width: 100%;
+
+    }
+
+    padding: 10px;
+
+    label {
+        font-family: $titulo;
+        font-size: 20px;
+    }
+}
+
+.foto {
+    width: 40%;
+}
+
+.form {
+    width: 30%;
+}
+
+.boton {
+    background-color: $violeta;
+    border-color: $violeta;
+    font-family: $titulo;
+    font-size: 25px;
+    color: white;
+    padding: 5px;
+
+
+}
+
+.nombre {
+    margin-bottom: 1rem;
+}
+
+@media (max-width: 768px),
+(max-width:1023px) {
+    .formulario {
+        display: block;
+
+        img {
+            margin: auto;
+            width: 100%;
+            padding: 2vh;
+        }
+
+        .boton {
+            padding: 2px;
+            font-size: 20px;
+        }
+
+        .foto,
+        .form {
+            width: 100%;
+        }
+    }
+}

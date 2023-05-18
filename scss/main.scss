@@ -1,0 +1,17 @@
+ // VARIABLES VAN SIEMPRE ARRIBA DE TODO
+ @import "./utilities/colors";
+ @import "./utilities/typo";
+
+
+
+ @import "./utilities/reset";
+ @import "./utilities/titles-text"; 
+ // SECCIONES
+
+ @import "./sections/header";
+ @import "./sections/main-index";
+ @import "./sections/main-biografia";
+ @import "./sections/main-galeria";
+ @import "./sections/main-discografia";
+ @import "./sections/main-contacto";
+ @import "./sections/footer";
